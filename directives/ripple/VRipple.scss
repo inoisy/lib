@@ -1,0 +1,45 @@
+$ripple-animation-transition-in: transform .25s map-get($transition, 'fast-in-slow-out'),
+    opacity .1s map-get($transition, 'fast-in-slow-out') !default;
+$ripple-animation-transition-out: opacity .3s map-get($transition, 'fast-in-slow-out') transform .25s map-get($transition, 'fast-in-slow-out') !default;
+$ripple-animation-visible-opacity: .15 !default;
+
+.v-ripple {
+    &__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        color: inherit;
+        pointer-events: none;
+        contain: strict;
+    }
+
+    &__animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        border-radius: 50%;
+        background: currentColor;
+        color: inherit;
+        opacity: 0;
+        pointer-events: none;
+        will-change: transform, opacity;
+
+        &--enter {
+            transition: none;
+        }
+
+        &--in {
+            transition: $ripple-animation-transition-in;
+        }
+
+        &--out {
+            transition: $ripple-animation-transition-out;
+        }
+    }
+}

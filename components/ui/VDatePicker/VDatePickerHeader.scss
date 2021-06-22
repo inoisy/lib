@@ -1,0 +1,64 @@
+// @import './_variables.scss';
+
+$date-picker-header-padding: 4px 16px !default;
+$date-picker-header-value-transition: $primary-transition !default;
+$date-picker-header-button-font-weight: bold !default;
+$date-picker-header-button-padding: .5rem !default;
+$date-picker-header-button-transition: $primary-transition !default;
+
+@include theme(v-date-picker-header) using ($material) {
+    .v-date-picker-header__value:not(.v-date-picker-header__value--disabled) {
+        button:not(:hover):not(:focus) {
+            color: map-deep-get($material, 'text', 'primary');
+        }
+    }
+
+    .v-date-picker-header__value--disabled {
+        button {
+            color: map-deep-get($material, 'text', 'disabled');
+        }
+    }
+}
+
+.v-date-picker-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: $date-picker-header-padding;
+
+    .v-btn {
+        z-index: auto;
+        margin: 0;
+    }
+
+    .v-icon {
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+.v-date-picker-header__value {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    text-align: center;
+
+    div {
+        width: 100%;
+        transition: $date-picker-header-value-transition;
+    }
+
+    button {
+        padding: $date-picker-header-button-padding;
+        outline: none;
+        transition: $date-picker-header-button-transition;
+        cursor: pointer;
+        font-weight: $date-picker-header-button-font-weight;
+    }
+}
+
+.v-date-picker-header--disabled {
+    pointer-events: none;
+}

@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VInput.js should apply theme to label, counter, messages and icons 1`] = `
+<div class="v-input theme--light">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <span aria-hidden="true"
+            class="v-icon notranslate theme--light"
+      >
+        <svg-icon class="v-icon__component theme--light">
+        </svg-icon>
+      </span>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <label for="input-68"
+             class="v-label theme--light"
+             style="left: 0px; position: relative;"
+      >
+        foo
+      </label>
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+        <div class="v-messages__message">
+          bar
+        </div>
+      </transition-group-stub>
+    </div>
+  </div>
+  <div class="v-input__append-outer">
+    <div class="v-input__icon v-input__icon--append">
+      <span aria-hidden="true"
+            class="v-icon notranslate theme--light"
+      >
+        <svg-icon class="v-icon__component theme--light">
+        </svg-icon>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should be in an error state 1`] = `
+<div class="v-input v-input--has-state theme--light error--text">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+    <div class="v-messages theme--light error--text">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should be in an error state 2`] = `
+<div class="v-input v-input--has-state theme--light error--text">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+    <div class="v-messages theme--light error--text"
+         role="alert"
+    >
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+        <div class="v-messages__message">
+          required
+        </div>
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should generate an icon and match snapshot 1`] = `
+<div class="v-input theme--light">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <span aria-hidden="true"
+            class="v-icon notranslate theme--light"
+      >
+        <svg-icon class="v-icon__component theme--light">
+        </svg-icon>
+      </span>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should generate an icon and match snapshot 2`] = `
+<div class="v-input theme--light">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+  <div class="v-input__append-outer">
+    <div class="v-input__icon v-input__icon--append">
+      <span aria-hidden="true"
+            class="v-icon notranslate theme--light"
+      >
+        <svg-icon class="v-icon__component theme--light">
+        </svg-icon>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should generate append and prepend slots 1`] = `
+<div class="v-input theme--light">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+  <div class="v-input__append-outer">
+    <div>
+      append
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should generate append and prepend slots 2`] = `
+<div class="v-input theme--light">
+  <div class="v-input__prepend-outer">
+    <div>
+      prepend
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should not apply attrs to element 1`] = `
+<div class="v-input theme--light">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should not generate input details 1`] = `
+<div class="v-input v-input--hide-details theme--light">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should render a label 1`] = `
+<div class="v-input theme--light">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <label for="input-59"
+             class="v-label theme--light"
+             style="left: 0px; position: relative;"
+      >
+        foo
+      </label>
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VInput.js should render a label 2`] = `
+<div class="v-input theme--light">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <label for="input-63"
+             class="v-label theme--light"
+             style="left: 0px; position: relative;"
+      >
+        <div>
+          foo
+        </div>
+      </label>
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;

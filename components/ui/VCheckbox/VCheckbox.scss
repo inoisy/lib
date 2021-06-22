@@ -1,0 +1,14 @@
+@import './_variables.scss';
+@import '../../../styles/components/_selection-controls';
+
+.v-input--checkbox {
+    &.v-input--indeterminate {
+        &.v-input--is-disabled {
+            opacity: $checkbox-disabled-opacity;
+        }
+    }
+
+    &.v-input--dense {
+        margin-top: $checkbox-dense-margin-top;
+    }
+}

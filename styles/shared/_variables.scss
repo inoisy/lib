@@ -1,0 +1,492 @@
+$redline: #ed1c24;
+$vice: #92278f;
+$moxxy: #c6168d;
+$elysium: #6050bd;
+$kain: #1654c6;
+$light-gray: #f1f2f3;
+$blue: #0d69e1;
+$pink: #e986ac;
+$violet: #c367b2;
+
+$milk: #fcfcfc;
+$base-50: #f0f1f2;
+$base-100: #ccd3da;
+$base-200: #99a7b5;
+$base-300: #677b8f;
+$base-400: #344f6a;
+$base-450: #092a4b;
+$base-500: #012345;
+$base-700: #011529;
+$base-800: #000e1c;
+
+$secondary-100: #e9d4e9;
+$secondary-200: #d3a9d2;
+$secondary-300: #be7dbc;
+$secondary-400: #a852a5;
+$secondary-500: #92278f;
+$secondary-600: #751f72;
+$secondary-700: #581756;
+$secondary-900: #1d081d;
+
+$primary-100: #fbd2d3;
+$primary-200: #f8a4a7;
+$primary-400: #f14950;
+
+$tertiary-100: #f4d0e8;
+$tertiary-200: #edb5da;
+$tertiary-400: #d145a4;
+
+$quaternary-200: #bfb9e5;
+$quaternary-400: #8073cb;
+
+$body-color: $base-300;
+$body-bg: $milk;
+
+$shades: (
+    'black': $base-800,
+    'white': $milk,
+    'transparent': transparent
+);
+$material-light: (
+    'cards': map-get($shades, 'white'),
+    'dividers': rgba(map-get($shades, 'black'), .12),
+    'text': (
+        'theme': map-get($shades, 'white'),
+        'primary': rgba(map-get($shades, 'black'), .87),
+        'secondary': rgba(map-get($shades, 'black'), .6),
+        'disabled': rgba(map-get($shades, 'black'), .38),
+    ),
+    'icons': (
+        'active': rgba(map-get($shades, 'black'), .54),
+        'inactive': rgba(map-get($shades, 'black'), .38)
+    ),
+    'inputs': (
+        'box': rgba(map-get($shades, 'black'), .04),
+        'solo-inverted': rgba(map-get($shades, 'black'), .06),
+        'solo-inverted-focused': $base-300,
+        'solo-inverted-focused-label': rgba(map-get($shades, 'white'), .7),
+        'solo-inverted-focused-placeholder': rgba(map-get($shades, 'white'), .5),
+        'solo-inverted-focused-text': map-get($shades, 'white')
+    ),
+    'buttons': (
+        'disabled': rgba(map-get($shades, 'black'), .26),
+        'focused': rgba(map-get($shades, 'black'), .12),
+        'focused-alt': rgba(map-get($shades, 'white'), .6),
+        'pressed': rgba(#999, .4)
+    ),
+    'skeleton': linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, .3), rgba(255, 255, 255, 0)),
+    'states': (
+        'hover': .04,
+        'focus': .12,
+        'selected': .08,
+        'activated': .12,
+        'pressed': .16,
+        'dragged': .08
+    ),
+    'tabs': rgba(0, 0, 0, .54),
+    'toggle-buttons': (
+        'color': map-get($shades, 'black')
+    ),
+    'text-fields': (
+        'filled': rgba(map-get($shades, 'black'), .06),
+        'filled-hover': rgba(map-get($shades, 'black'), .12),
+        'outlined': rgba(map-get($shades, 'black'), .38),
+        'outlined-disabled': rgba(map-get($shades, 'black'), .26),
+        'outlined-hover': rgba(map-get($shades, 'black'), .86)
+    ),
+    'toolbar': map-get($shades, 'white'),
+    'input-bottom-line': rgba(map-get($shades, 'black'), .42),
+    'bg-color': map-get($shades, 'white'),
+    'fg-color': map-get($shades, 'black'),
+    'text-color': map-get($shades, 'black'),
+    'primary-text-percent': .87,
+    'secondary-text-percent': .6,
+    'disabledORhints-text-percent': .38,
+    'divider-percent': .12,
+    'active-icon-percent': .54,
+    'inactive-icon-percent': .38,
+    'selection-controls': (
+        'disabled': rgba(map-get($shades, 'black'), .26),
+        'thumb': (
+            'inactive': map-get($shades, 'white'),
+            'disabled': $base-100
+        ),
+        'track': (
+            'inactive': rgba(map-get($shades, 'black'), .38),
+            'disabled': rgba(map-get($shades, 'black'), .12)
+        )
+    ),
+    'picker': (
+        'body': map-get($shades, 'white'),
+        'clock': $base-200,
+        'indeterminateTime': $base-100,
+        'title': $base-200,
+    ),
+    'navigation-drawer': map-get($shades, 'white'),
+    'slider': (
+        'active': rgba(map-get($shades, 'black'), .38),
+        'inactive': rgba(map-get($shades, 'black'), .26),
+        'disabled': rgba(map-get($shades, 'black'), .26),
+        'discrete': map-get($shades, 'black')
+    ),
+);
+
+$material-dark:
+    (
+        'dividers': rgba(map-get($shades, 'white'), .12),
+        'text': (
+            'theme': map-get($shades, 'white'),
+            'primary': map-get($shades, 'white'),
+            'secondary': rgba(map-get($shades, 'white'), .7),
+            'disabled': rgba(map-get($shades, 'white'), .5),
+            'link': $blue,
+            'link-hover': $base-200
+        ),
+        'icons': (
+            'active': map-get($shades, 'white'),
+            'inactive': rgba(map-get($shades, 'white'), .5)
+        ),
+        'inputs': (
+            'box': map-get($shades, 'white'),
+            'solo-inverted': rgba(map-get($shades, 'white'), .16),
+            'solo-inverted-focused': map-get($shades, 'white'),
+            'solo-inverted-focused-label': rgba(map-get($shades, 'black'), .6),
+            'solo-inverted-focused-placeholder': rgba(map-get($shades, 'black'), .38),
+            'solo-inverted-focused-text': rgba(map-get($shades, 'black'), .87)
+        ),
+        'buttons': (
+            'disabled': rgba(map-get($shades, 'white'), .3),
+            'focused': rgba(map-get($shades, 'white'), .12),
+            'focused-alt': rgba(map-get($shades, 'white'), .1),
+            'pressed': rgba(#ccc, .25)
+        ),
+        'states': (
+            'hover': .08,
+            'focus': .24,
+            'selected': .16,
+            'activated': .24,
+            'pressed': .32,
+            'dragged': .16
+        ),
+        'text-fields': (
+            'filled': rgba(map-get($shades, 'white'), .08),
+            'filled-hover': rgba(map-get($shades, 'white'), .16),
+            'outlined': rgba(map-get($shades, 'white'), .24),
+            'outlined-disabled': rgba(map-get($shades, 'white'), .16),
+            'outlined-hover': map-get($shades, 'white')
+        ),
+        'input-bottom-line': $base-200,
+        'text-color': map-get($shades, 'white'),
+        'selection-controls': (
+            'disabled': rgba(map-get($shades, 'white'), .3),
+            'thumb': (
+                'inactive': $base-100,
+                'disabled': $base-300
+            ),
+            'track': (
+                'inactive': rgba(map-get($shades, 'white'), .3),
+                'disabled': rgba(map-get($shades, 'white'), .1)
+            )
+        ),
+        'picker': (
+            'body': $base-500,
+            'clock': $base-500,
+            'indeterminateTime': $base-500,
+            'title': $base-500
+        ),
+        'navigation-drawer': map-get($shades, 'black'),
+        'slider': (
+            'active': rgba(map-get($shades, 'white'), .3),
+            'inactive': rgba(map-get($shades, 'white'), .2),
+            'disabled': rgba(map-get($shades, 'white'), .2),
+            'discrete': map-get($shades, 'white')
+        ),
+    );
+
+$shadow-key-umbra-opacity: rgba(0, 0, 0, .2) !default;
+$shadow-key-penumbra-opacity: rgba(0, 0, 0, .14) !default;
+$shadow-key-ambient-opacity: rgba(0, 0, 0, .12) !default;
+
+$shadow-key-umbra: (
+    0: (0 0 0 0 $shadow-key-umbra-opacity),
+    1: (0 2px 1px -1px $shadow-key-umbra-opacity),
+    2: (0 3px 1px -2px $shadow-key-umbra-opacity),
+    3: (0 3px 3px -2px $shadow-key-umbra-opacity),
+    4: (0 2px 4px -1px $shadow-key-umbra-opacity),
+    5: (0 3px 5px -1px $shadow-key-umbra-opacity),
+    6: (0 3px 5px -1px $shadow-key-umbra-opacity),
+    7: (0 4px 5px -2px $shadow-key-umbra-opacity),
+    8: (0 5px 5px -3px $shadow-key-umbra-opacity),
+    9: (0 5px 6px -3px $shadow-key-umbra-opacity),
+    10: (0 6px 6px -3px $shadow-key-umbra-opacity),
+    11: (0 6px 7px -4px $shadow-key-umbra-opacity),
+    12: (0 7px 8px -4px $shadow-key-umbra-opacity),
+    13: (0 7px 8px -4px $shadow-key-umbra-opacity),
+    14: (0 7px 9px -4px $shadow-key-umbra-opacity),
+    15: (0 8px 9px -5px $shadow-key-umbra-opacity),
+    16: (0 8px 10px -5px $shadow-key-umbra-opacity),
+    17: (0 8px 11px -5px $shadow-key-umbra-opacity),
+    18: (0 9px 11px -5px $shadow-key-umbra-opacity),
+    19: (0 9px 12px -6px $shadow-key-umbra-opacity),
+    20: (0 10px 13px -6px $shadow-key-umbra-opacity),
+    21: (0 10px 13px -6px $shadow-key-umbra-opacity),
+    22: (0 10px 14px -6px $shadow-key-umbra-opacity),
+    23: (0 11px 14px -7px $shadow-key-umbra-opacity),
+    24: (0 11px 15px -7px $shadow-key-umbra-opacity)
+);
+
+$shadow-key-penumbra:  (
+    0: (0 0 0 0 $shadow-key-penumbra-opacity),
+    1: (0 1px 1px 0 $shadow-key-penumbra-opacity),
+    2: (0 2px 2px 0 $shadow-key-penumbra-opacity),
+    3: (0 3px 4px 0 $shadow-key-penumbra-opacity),
+    4: (0 4px 5px 0 $shadow-key-penumbra-opacity),
+    5: (0 5px 8px 0 $shadow-key-penumbra-opacity),
+    6: (0 6px 10px 0 $shadow-key-penumbra-opacity),
+    7: (0 7px 10px 1px $shadow-key-penumbra-opacity),
+    8: (0 8px 10px 1px $shadow-key-penumbra-opacity),
+    9: (0 9px 12px 1px $shadow-key-penumbra-opacity),
+    10: (0 10px 14px 1px $shadow-key-penumbra-opacity),
+    11: (0 11px 15px 1px $shadow-key-penumbra-opacity),
+    12: (0 12px 17px 2px $shadow-key-penumbra-opacity),
+    13: (0 13px 19px 2px $shadow-key-penumbra-opacity),
+    14: (0 14px 21px 2px $shadow-key-penumbra-opacity),
+    15: (0 15px 22px 2px $shadow-key-penumbra-opacity),
+    16: (0 16px 24px 2px $shadow-key-penumbra-opacity),
+    17: (0 17px 26px 2px $shadow-key-penumbra-opacity),
+    18: (0 18px 28px 2px $shadow-key-penumbra-opacity),
+    19: (0 19px 29px 2px $shadow-key-penumbra-opacity),
+    20: (0 20px 31px 3px $shadow-key-penumbra-opacity),
+    21: (0 21px 33px 3px $shadow-key-penumbra-opacity),
+    22: (0 22px 35px 3px $shadow-key-penumbra-opacity),
+    23: (0 23px 36px 3px $shadow-key-penumbra-opacity),
+    24: (0 24px 38px 3px $shadow-key-penumbra-opacity)
+);
+
+$shadow-key-ambient: (
+    0: (0 0 0 0 $shadow-key-ambient-opacity),
+    1: (0 1px 3px 0 $shadow-key-ambient-opacity),
+    2: (0 1px 5px 0 $shadow-key-ambient-opacity),
+    3: (0 1px 8px 0 $shadow-key-ambient-opacity),
+    4: (0 1px 10px 0 $shadow-key-ambient-opacity),
+    5: (0 1px 14px 0 $shadow-key-ambient-opacity),
+    6: (0 1px 18px 0 $shadow-key-ambient-opacity),
+    7: (0 2px 16px 1px $shadow-key-ambient-opacity),
+    8: (0 3px 14px 2px $shadow-key-ambient-opacity),
+    9: (0 3px 16px 2px $shadow-key-ambient-opacity),
+    10: (0 4px 18px 3px $shadow-key-ambient-opacity),
+    11: (0 4px 20px 3px $shadow-key-ambient-opacity),
+    12: (0 5px 22px 4px $shadow-key-ambient-opacity),
+    13: (0 5px 24px 4px $shadow-key-ambient-opacity),
+    14: (0 5px 26px 4px $shadow-key-ambient-opacity),
+    15: (0 6px 28px 5px $shadow-key-ambient-opacity),
+    16: (0 6px 30px 5px $shadow-key-ambient-opacity),
+    17: (0 6px 32px 5px $shadow-key-ambient-opacity),
+    18: (0 7px 34px 6px $shadow-key-ambient-opacity),
+    19: (0 7px 36px 6px $shadow-key-ambient-opacity),
+    20: (0 8px 38px 7px $shadow-key-ambient-opacity),
+    21: (0 8px 40px 7px $shadow-key-ambient-opacity),
+    22: (0 8px 42px 7px $shadow-key-ambient-opacity),
+    23: (0 9px 44px 8px $shadow-key-ambient-opacity),
+    24: (0 9px 46px 8px $shadow-key-ambient-opacity)
+);
+
+
+/* Defaults */
+$font-family: "Mazzard", "Arial", sans-serif;
+$base-font-size: 16px;
+
+/* Grid */
+$header-h: 121px;
+// $header-h-small: 6.4rem;
+$header-h-tablet: 80px;
+$header-h-mobile: 56px;
+$sub-header-h: 6.4rem;
+$sub-header-h-tablet: 80px;
+$sub-header-h-mobile: 66px;
+$container-width-desktop-xl: 180.8rem;
+$container-width-desktop: 132.8rem;
+$container-width-desktop-small: 77.6rem;
+$bottom-nav-height-tablet: 76px;
+$bottom-nav-height-mobile: 58px;
+
+$nav-bottom-items: 2;
+
+/* Spacing */
+$side-padding-desktop: 56px;
+$side-padding-tablet: 40px;
+$side-padding-mobile: 16px;
+
+/* Transition */
+$bezier: cubic-bezier(.25, .74, .22, .99);
+$bezier-second: cubic-bezier(.25, .1, .25, 1);
+$text-bezier: cubic-bezier(.4, 0, 0, 1);
+$apple-cubic: cubic-bezier(.165, .84, .44, 1);
+$popup-out-bezier: cubic-bezier(.47, .04, .5, -.6);
+$popup-in-bezier: cubic-bezier(.25, .74, .22, .99);
+
+$default-transition: .4s ease-in-out;
+$cubic-transition: .3s $bezier;
+$text-transition: .9s $text-bezier;
+
+$box-shadow: 0 4px 8px rgba(0, 0, 0, .04), 0 0 2px rgba(0, 0, 0, .06),
+    0 0 1px rgba(0, 0, 0, .04);
+
+/* pdf size coefficient */
+$pdfSize: 1.33;
+
+/* Breakpoints */
+
+$breakpoints: (
+    xs: 412px,
+    sm: 768px,
+    md: 1024px,
+    lg: 1440px,
+    xl: 1920px,
+);
+
+$transition: (
+    'fast-out-slow-in': cubic-bezier(.4, 0, .2, 1),
+    'linear-out-slow-in': cubic-bezier(0, 0, .2, 1),
+    'fast-out-linear-in': cubic-bezier(.4, 0, 1, 1),
+    'ease-in-out': cubic-bezier(.4, 0, .6, 1),
+    'fast-in-fast-out': cubic-bezier(.25, .8, .25, 1),
+    'swing': cubic-bezier(.25, .8, .5, 1)
+);
+
+$primary-transition: .3s map-get($transition, 'swing');
+
+$border-radius-root: 4px !default;
+
+$rounded:  (
+    0: 0,
+    'sm': $border-radius-root / 2,
+    null: $border-radius-root,
+    'lg': $border-radius-root * 2,
+    'xl': $border-radius-root * 6,
+    'pill': 9999px,
+    'circle': 50%
+);
+$spacer: 4px !default;
+
+$grid-gutter: $spacer * 6 !default;
+
+$grid-gutters:  (
+    'xs': $grid-gutter / 12,
+    'sm': $grid-gutter / 6,
+    'md': $grid-gutter / 3,
+    'lg': $grid-gutter * 2/3,
+    'xl': $grid-gutter
+);
+$input-top-spacing: 14px !default;
+
+$body-font-family: $font-family;
+$heading-font-family: $body-font-family !default;
+
+// $headings: () !default;
+$headings:  (
+    'h1': (
+        'size': 6rem,
+        'weight': 300,
+        'line-height': 6rem,
+        'letter-spacing': -.015625em,
+        'font-family': $heading-font-family,
+        'text-transform': false
+    ),
+    'h2': (
+        'size': 3.75rem,
+        'weight': 300,
+        'line-height': 3.75rem,
+        'letter-spacing': -.0083333333em,
+        'font-family': $heading-font-family,
+        'text-transform': false
+    ),
+    'h3': (
+        'size': 3rem,
+        'weight': 400,
+        'line-height': 3.125rem,
+        'letter-spacing': normal,
+        'font-family': $heading-font-family,
+        'text-transform': false
+    ),
+    'h4': (
+        'size': 2.125rem,
+        'weight': 400,
+        'line-height': 2.5rem,
+        'letter-spacing': .0073529412em,
+        'font-family': $heading-font-family,
+        'text-transform': false
+    ),
+    'h5': (
+        'size': 1.5rem,
+        'weight': 400,
+        'line-height': 2rem,
+        'letter-spacing': normal,
+        'font-family': $heading-font-family,
+        'text-transform': false
+    ),
+    'h6': (
+        'size': 1.25rem,
+        'weight': 500,
+        'line-height': 2rem,
+        'letter-spacing': .0125em,
+        'font-family': $heading-font-family,
+        'text-transform': false
+    ),
+    'subtitle-1': (
+        'size': 1rem,
+        'weight': normal,
+        'line-height': 1.75rem,
+        'letter-spacing': .009375em,
+        'font-family': $body-font-family,
+        'text-transform': false
+    ),
+    'subtitle-2': (
+        'size': .875rem,
+        'weight': 500,
+        'line-height': 1.375rem,
+        'letter-spacing': .0071428571em,
+        'font-family': $body-font-family,
+        'text-transform': false
+    ),
+    'body-1': (
+        'size': 1rem,
+        'weight': 400,
+        'line-height': 1.5rem,
+        'letter-spacing': .03125em,
+        'font-family': $body-font-family,
+        'text-transform': false
+    ),
+    'body-2': (
+        'size': .875rem,
+        'weight': 400,
+        'line-height': 1.25rem,
+        'letter-spacing': .0178571429em,
+        'font-family': $body-font-family,
+        'text-transform': false
+    ),
+    'button': (
+        'size': .875rem,
+        'weight': 500,
+        'line-height': 2.25rem,
+        'letter-spacing': .0892857143em,
+        'font-family': $body-font-family,
+        'text-transform': uppercase
+    ),
+    'caption': (
+        'size': .75rem,
+        'weight': 400,
+        'line-height': 1.25rem,
+        'letter-spacing': .0333333333em,
+        'font-family': $body-font-family,
+        'text-transform': false
+    ),
+    'overline': (
+        'size': .75rem,
+        'weight': 500,
+        'line-height': 2rem,
+        'letter-spacing': .1666666667em,
+        'font-family': $body-font-family,
+        'text-transform': uppercase
+    )
+);

@@ -1,0 +1,665 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VFileInput.js should be unclearable 1`] = `
+<div class="v-input theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+        </div>
+        <input id="input-25"
+               type="file"
+        >
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should display file size 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+          test (2.1 MB)
+        </div>
+        <input id="input-13"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should display file size 2`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+          test (2.1 MB)
+        </div>
+        <input id="input-13"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should display total size in counter 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+          Файлов: undefined
+        </div>
+        <input id="input-19"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+      <div class="v-counter theme--light">
+        Файлов: undefined (всего undefined)
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should display total size in counter 2`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+          Файлов: undefined
+        </div>
+        <input id="input-19"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+      <div class="v-counter theme--light">
+        Файлов: undefined (всего undefined)
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should render 1`] = `
+<div class="v-input theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+        </div>
+        <input id="input-1"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button disabled="disabled"
+                  type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--disabled v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should render chips 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text v-file-input__text--chips">
+          <span class="v-chip v-chip--no-color theme--light v-size--default">
+            <span class="v-chip__content">
+              test
+            </span>
+          </span>
+        </div>
+        <input id="input-66"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should render counter 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+          test
+        </div>
+        <input id="input-7"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+      <div class="v-counter theme--light">
+        Файлов: undefined
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should render small chips 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text v-file-input__text--chips">
+          <span class="v-chip v-chip--no-color theme--light v-size--small">
+            <span class="v-chip__content">
+              test
+            </span>
+          </span>
+        </div>
+        <input id="input-73"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should render without icon 1`] = `
+<div class="v-input theme--light v-text-field v-file-input">
+  <div class="v-input__control">
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+        </div>
+        <input id="input-80"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button disabled="disabled"
+                  type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--disabled v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VFileInput.js should set display none if hide-input prop is set 1`] = `
+<div class="v-input theme--light v-text-field v-file-input">
+  <div class="v-input__prepend-outer">
+    <div class="v-input__icon v-input__icon--prepend">
+      <button type="button"
+              aria-label="prepend icon"
+              class="v-icon notranslate v-icon--link theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M16.5,6V17.5C16.5,19.71 14.71,21.5 12.5,21.5C10.29,21.5 8.5,19.71 8.5,17.5V5C8.5,3.62 9.62,2.5 11,2.5C12.38,2.5 13.5,3.62 13.5,5V15.5C13.5,16.05 13.05,16.5 12.5,16.5C11.95,16.5 11.5,16.05 11.5,15.5V6H10V15.5C10,16.88 11.12,18 12.5,18C13.88,18 15,16.88 15,15.5V5C15,2.79 13.21,1 11,1C8.79,1 7,2.79 7,5V17.5C7,20.54 9.46,23 12.5,23C15.54,23 18,20.54 18,17.5V6H16.5Z">
+          </path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="v-input__control"
+       style="display: none;"
+  >
+    <div class="v-input__slot">
+      <div class="v-text-field__slot">
+        <div class="v-file-input__text">
+        </div>
+        <input id="input-109"
+               type="file"
+        >
+      </div>
+      <div class="v-input__append-inner">
+        <div class="v-input__icon v-input__icon--clear">
+          <button disabled="disabled"
+                  type="button"
+                  aria-label="clear icon"
+                  class="v-icon notranslate v-icon--disabled v-icon--link theme--light"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 24 24"
+                 role="img"
+                 aria-hidden="true"
+                 class="v-icon__svg"
+            >
+              <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+              </path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;

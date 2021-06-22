@@ -1,0 +1,17 @@
+// Imports
+
+// Block
+.v-simple-checkbox {
+    position: relative;
+    align-self: center;
+    line-height: normal;
+    user-select: none;
+
+    .v-icon {
+        cursor: pointer;
+    }
+}
+// Modifiers
+.v-simple-checkbox--disabled {
+    cursor: default;
+}

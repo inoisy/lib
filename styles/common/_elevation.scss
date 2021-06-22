@@ -1,0 +1,11 @@
+@import '../tools/_elevation.scss';
+
+$z: 24;
+
+@while $z >= 0 {
+    .elevation-#{$z} {
+        @include elevation($z, $important: true);
+    }
+
+    $z: $z - 1;
+}

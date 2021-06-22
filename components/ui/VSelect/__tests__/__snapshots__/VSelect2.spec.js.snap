@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VSelect.js should be clearable with prop, dirty and multi select 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select v-select--is-multi">
+  <div class="v-input__control">
+    <div role="button"
+         aria-haspopup="listbox"
+         aria-expanded="false"
+         aria-owns="list-106"
+         class="v-input__slot"
+    >
+      <div class="v-select__slot">
+        <div class="v-select__selections">
+          <div class="v-select__selection v-select__selection--comma">
+            1
+          </div>
+          <input id="input-106"
+                 readonly="readonly"
+                 type="text"
+                 aria-readonly="false"
+                 autocomplete="off"
+          >
+        </div>
+        <div class="v-input__append-inner">
+          <div class="v-input__icon v-input__icon--clear">
+            <button type="button"
+                    aria-label="clear icon"
+                    class="v-icon notranslate v-icon--link theme--light"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   role="img"
+                   aria-hidden="true"
+                   class="v-icon__svg"
+              >
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="v-input__append-inner">
+          <div class="v-input__icon v-input__icon--append">
+            <span aria-hidden="true"
+                  class="v-icon notranslate theme--light"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   role="img"
+                   aria-hidden="true"
+                   class="v-icon__svg"
+              >
+                <path d="M7,10L12,15L17,10H7Z">
+                </path>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <input type="hidden"
+               value="1"
+        >
+      </div>
+      <div class="v-menu">
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VSelect.js should be clearable with prop, dirty and single select 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+  <div class="v-input__control">
+    <div role="button"
+         aria-haspopup="listbox"
+         aria-expanded="false"
+         aria-owns="list-99"
+         class="v-input__slot"
+    >
+      <div class="v-select__slot">
+        <div class="v-select__selections">
+          <div class="v-select__selection v-select__selection--comma">
+            1
+          </div>
+          <input id="input-99"
+                 readonly="readonly"
+                 type="text"
+                 aria-readonly="false"
+                 autocomplete="off"
+          >
+        </div>
+        <div class="v-input__append-inner">
+          <div class="v-input__icon v-input__icon--clear">
+            <button type="button"
+                    aria-label="clear icon"
+                    class="v-icon notranslate v-icon--link theme--light"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   role="img"
+                   aria-hidden="true"
+                   class="v-icon__svg"
+              >
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="v-input__append-inner">
+          <div class="v-input__icon v-input__icon--append">
+            <span aria-hidden="true"
+                  class="v-icon notranslate theme--light"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   role="img"
+                   aria-hidden="true"
+                   class="v-icon__svg"
+              >
+                <path d="M7,10L12,15L17,10H7Z">
+                </path>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <input type="hidden"
+               value="1"
+        >
+      </div>
+      <div class="v-menu">
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VSelect.js should use scoped slot for selection generation 1`] = `
+<div class="v-input v-input--is-label-active v-input--is-dirty theme--light v-text-field v-select">
+  <div class="v-input__control">
+    <div role="button"
+         aria-haspopup="listbox"
+         aria-expanded="false"
+         aria-owns="list-24"
+         class="v-input__slot"
+    >
+      <div class="v-select__slot">
+        <div class="v-select__selections">
+          <div>
+            foo - from slot
+          </div>
+          <input id="input-24"
+                 readonly="readonly"
+                 type="text"
+                 aria-readonly="false"
+                 autocomplete="off"
+          >
+        </div>
+        <div class="v-input__append-inner">
+          <div class="v-input__icon v-input__icon--append">
+            <span aria-hidden="true"
+                  class="v-icon notranslate theme--light"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   role="img"
+                   aria-hidden="true"
+                   class="v-icon__svg"
+              >
+                <path d="M7,10L12,15L17,10H7Z">
+                </path>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <input type="hidden"
+               value="foo"
+        >
+      </div>
+      <div class="v-menu">
+      </div>
+    </div>
+    <div class="v-text-field__details">
+      <div class="v-messages theme--light">
+        <transition-group-stub tag="div"
+                               name="message-transition"
+                               class="v-messages__wrapper"
+        >
+        </transition-group-stub>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VSelect.js should use slotted append-item 1`] = `
+<div role="listbox"
+     tabindex="-1"
+     class="v-list v-select-list v-sheet theme--light theme--light"
+     id="list-12"
+>
+  <div tabindex="0"
+       aria-selected="false"
+       id="list-item-16-0"
+       role="option"
+       class="v-list-item v-list-item--link theme--light"
+  >
+    <div class="v-list-item__content">
+      <div class="v-list-item__title">
+        foo
+      </div>
+    </div>
+  </div>
+  <div>
+    foo
+  </div>
+</div>
+`;
+
+exports[`VSelect.js should use slotted prepend-item 1`] = `
+<div role="listbox"
+     tabindex="-1"
+     class="v-list v-select-list v-sheet theme--light theme--light"
+     id="list-1"
+>
+  <div>
+    foo
+  </div>
+  <div tabindex="0"
+       aria-selected="false"
+       id="list-item-5-0"
+       role="option"
+       class="v-list-item v-list-item--link theme--light"
+  >
+    <div class="v-list-item__content">
+      <div class="v-list-item__title">
+        foo
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,91 @@
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s linear;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+.fade-fast-enter-active,
+.fade-fast-leave-active {
+    transition: opacity .2s linear;
+}
+
+.fade-fast-enter,
+.fade-fast-leave-active {
+    opacity: 0;
+}
+
+.right-appear-enter-active,
+.right-appear-leave-active {
+    transition: transform .3s linear, opacity .3s linear;
+}
+
+.right-appear-enter,
+.right-appear-leave-active {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.left-appear-enter-active,
+.left-appear-leave-active {
+    transition: transform .3s linear, opacity .3s linear;
+}
+
+.left-appear-enter,
+.left-appear-leave-active {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.appear-enter-active,
+.appear-leave-active {
+    transition: opacity .4s ease-in-out, transform .4s ease-in-out;
+}
+
+.appear-enter,
+.appear-leave-active {
+    opacity: 0;
+    transform: translateY(64px);
+}
+
+.overlay-enter,
+.overlay-leave {
+    opacity: 0;
+}
+
+.overlay-enter-active {
+    transition: opacity 1s $popup-in-bezier;
+}
+
+.overlay-leave-active {
+    transition: opacity .3s $popup-out-bezier;
+}
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 1s;
+}
+
+.list-enter,
+.list-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.message-transition {
+    @include transition-default();
+
+    &-enter,
+    &-leave-to {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    &-leave,
+    &-leave-active {
+        position: absolute;
+    }
+}

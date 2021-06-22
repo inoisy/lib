@@ -1,0 +1,47 @@
+$date-picker-title-year-font-size: 14px !default;
+$date-picker-title-year-font-weight: 500 !default;
+$date-picker-title-year-bottom-margin: 8px !default;
+$date-picker-title-date-font-size: 34px !default;
+$date-picker-title-date-font-weight: 500 !default;
+
+.v-date-picker-title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1;
+
+    .v-picker__title__btn {
+        // +ltr()
+        text-align: left;
+
+        // +rtl()
+        //   text-align: right
+    }
+
+    &__year {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: $date-picker-title-year-bottom-margin;
+        font-size: $date-picker-title-year-font-size;
+        font-weight: $date-picker-title-year-font-weight;
+    }
+
+    &__date {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: -8px;
+        padding-bottom: 8px;
+        text-align: left;
+        font-size: $date-picker-title-date-font-size;
+        font-weight: $date-picker-title-date-font-weight;
+
+        > div {
+            position: relative;
+        }
+    }
+
+    &--disabled {
+        pointer-events: none;
+    }
+}

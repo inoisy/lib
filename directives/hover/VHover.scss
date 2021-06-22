@@ -1,0 +1,39 @@
+.v-hover {
+    &__container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        color: inherit;
+        pointer-events: none;
+        contain: strict;
+    }
+
+    &__animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        border-radius: 50%;
+        background: currentColor;
+        color: inherit;
+        pointer-events: none;
+        will-change: transform, opacity;
+
+        &--enter {
+            transition: none;
+        }
+
+        &--in {
+            transition: .3s linear;
+        }
+
+        &--out {
+            transition: .3s linear;
+        }
+    }
+}

@@ -1,0 +1,330 @@
+/* Media queries mixins */
+
+@mixin respond-to($name) {
+    $max: map-get($breakpoints, $name);
+    @if $max {
+        @media only screen and (max-width: $max) {
+            @content;
+        }
+    }
+
+    @else {
+        @content;
+    }
+}
+
+/* Adds mixins */
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+}
+
+@mixin respond-to-min($name) {
+    $min: map-get($breakpoints, $name);
+
+    @media (min-width: $min) {
+        @content;
+    }
+}
+
+@mixin respond-to-min-max($name, $bpMin: $breakpoints, $bpMax: $breakpoints) {
+    @media (min-width: $bpMin) and (max-width: $bpMax) {
+        @content;
+    }
+}
+
+@mixin respond-to-max-height($height) {
+    @media screen and (max-height: $height) {
+        @content;
+    }
+}
+
+@mixin respond-to-max-width($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin font($alias, $name, $weight) {
+    @font-face {
+        font-family: $alias;
+        src:
+            url('/fonts/' + $name + '.woff') format('woff'),
+            url('/fonts/' + $name + '.woff2') format('woff2');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@mixin hover {
+    @media (hover), (min-width: 0\0) {
+        @content;
+    }
+}
+
+@mixin touch {
+    @media (pointer: coarse) {
+        @content;
+    }
+}
+
+@mixin respond-iphone5 {
+    @media screen and (device-aspect-ratio: 40/71) {
+        @content;
+    }
+}
+
+@mixin respond-ie {
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        @content;
+    }
+}
+
+@mixin respond-edge {
+    @supports (-ms-ime-align:auto) {
+        @content;
+    }
+}
+
+@mixin portrait {
+    @media screen and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin transition-delay($count, $delay: 0, $defaultDelay: .15) {
+    @for $i from 1 through $count {
+        &:nth-child(#{$i}) {
+            transition-delay: #{($i * $defaultDelay)+ $delay}s;
+        }
+    }
+}
+
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin fix-responsive-min($prop,$min,$max) {
+    #{$prop}: #{$max};
+
+    @supports ( #{$prop}: min(#{$max}, #{$min})) {
+        #{$prop}: min(#{$max}, #{$min});
+    }
+}
+
+@mixin fix-responsive-clamp($prop,$min,$mid,$max) {
+    #{$prop}: #{$mid};
+
+    @supports ( #{$prop}: clamp(#{$min}, #{$mid}, #{$max})) {
+        #{$prop}: clamp(#{$min}, #{$mid}, #{$max});
+    }
+}
+
+@mixin respond-props-to-side-padding($props) {
+    @each $prop in $props {
+        #{$prop}: $side-padding-desktop;
+    }
+
+    @include respond-to(md) {
+        @each $prop in $props {
+            #{$prop}: $side-padding-tablet;
+        }
+    }
+
+    @include respond-to(sm) {
+        @each $prop in $props {
+            #{$prop}: $side-padding-mobile;
+        }
+    }
+}
+
+@mixin respond-prop-to-side-padding($prop) {
+    #{$prop}: $side-padding-desktop;
+
+    @include respond-to(md) {
+        #{$prop}: $side-padding-tablet;
+    }
+
+    @include respond-to(sm) {
+        #{$prop}: $side-padding-mobile;
+    }
+}
+
+@mixin borderLine($horizontalDirection: true, $after: true, $isPseudoSelectorAfter: true, $color: $base-100) {
+    // position: relative;
+    $pseudoSelector: after !default;
+    @if not $isPseudoSelectorAfter {
+        $pseudoSelector: before;
+    }
+    &:#{$pseudoSelector} {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: $color;
+        @if $horizontalDirection {
+            width: 100%;
+            height: 1px;
+            @if $after {
+                bottom: 0;
+                left: 0;
+            } @else {
+                top: 0;
+                left: 0;
+            }
+        } @else {
+            width: 1px;
+            height: 100%;
+            @if $after {
+                top: 0;
+                right: 0;
+            } @else {
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+@mixin theme ($component) {
+    .theme--light.#{$component} {
+        @content($material-light);
+    }
+    .theme--dark.#{$component} {
+        @content($material-dark);
+    }
+}
+
+/* stylelint-disable declaration-no-important */
+@mixin background-color($color_value) {
+    border-color: $color_value !important;
+    background-color: $color_value !important;
+}
+
+@mixin text-color($color_value) {
+    color: $color_value !important;
+    caret-color: $color_value !important;
+}
+
+/* stylelint-enable declaration-no-important */
+@mixin states ($material) {
+    &:hover:before {
+        opacity: map-deep-get($material, 'states', 'hover');
+    }
+
+    &:focus:before {
+        opacity: map-deep-get($material, 'states', 'focus');
+    }
+
+    &--active {
+        @include active-states($material);
+    }
+}
+
+@mixin active-states ($material) {
+    &:hover:before,
+    &:before {
+        opacity: map-deep-get($material, 'states', 'activated');
+    }
+
+    &:focus:before {
+        opacity: map-deep-get($material, 'states', 'pressed');
+    }
+}
+
+// @mixin rtl() {
+//     .v-application--is-rtl & {
+//         @content;
+//     }
+// }
+
+// @mixin ltr() {
+//     .v-application--is-ltr & {
+//         @content;
+//     }
+// }
+
+@mixin transition-default() {
+    &-enter-active,
+    &-leave-active {
+        transition: $primary-transition;
+    }
+
+    &-move {
+        transition: transform .6s;
+    }
+}
+
+@mixin elevation($z, $important: false) {
+    box-shadow: map-get($shadow-key-umbra, $z), map-get($shadow-key-penumbra, $z), map-get($shadow-key-ambient, $z) if($important, !important, null);
+}
+
+@mixin elevationTransition($duration: 280ms, $easing: cubic-bezier(.4, 0, .2, 1)) {
+    transition: box-shadow $duration $easing;
+    will-change: box-shadow;
+}
+
+@mixin radius($r, $important: false) {
+    // Key exists within the $rounded variable
+    @if (map-has-key($rounded, $r)) {
+        border-radius: map-get($rounded, $r) if($important, !important, null);
+    }
+    @else {
+        border-radius: $r if($important, !important, null);
+    }
+}
+
+@mixin paper ($elevation, $radius, $shaped-radius) {
+    @include radius($radius);
+
+    &:not(.v-sheet--outlined) {
+        @include elevation($elevation);
+    }
+
+    @if ($shaped-radius) {
+        &.v-sheet--shaped {
+            @include radius($shaped-radius);
+        }
+    }
+}
+
+@mixin sheet ($component, $elevation, $radius, $shaped-radius) {
+    .v-sheet.#{$component} {
+        @include paper($elevation, $radius, $shaped-radius);
+    }
+}
+
+@mixin bootable() {
+    &:not([data-booted="true"]) {
+
+        /* stylelint-disable declaration-no-important */
+        transition: none !important;
+
+        /* stylelint-enable  */
+    }
+}
+
+@mixin visually-hidden {
+
+    /* stylelint-disable declaration-no-important */
+
+    position: absolute !important;
+    overflow: hidden;
+    display: initial;
+    width: 1px;
+
+    /* stylelint-enable  */
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}

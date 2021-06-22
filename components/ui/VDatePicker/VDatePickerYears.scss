@@ -1,0 +1,46 @@
+$date-picker-years-font-size: 16px !default;
+$date-picker-years-font-weight: 400 !default;
+$date-picker-years-portrait-height: 290px !default;
+$date-picker-years-landscape-height: 290px !default;
+$date-picker-years-item-padding: 8px 0 !default;
+$date-picker-years-active-font-size: 26px !default;
+$date-picker-years-active-font-weight: 500 !default;
+$date-picker-years-active-padding: 10px 0 !default;
+$date-picker-years-item-hover-background: rgba(0, 0, 0, .12) !default;
+$date-picker-years-item-align: center !default;
+
+.v-date-picker-years {
+    overflow: auto;
+    height: $date-picker-years-portrait-height;
+    list-style-type: none;
+    text-align: $date-picker-years-item-align;
+    font-size: $date-picker-years-font-size;
+    font-weight: $date-picker-years-font-weight;
+
+    &.v-date-picker-years {
+        padding: 0;
+    }
+
+    li {
+        padding: $date-picker-years-item-padding;
+        transition: none;
+        cursor: pointer;
+
+        &.active {
+            padding: $date-picker-years-active-padding;
+            font-size: $date-picker-years-active-font-size;
+            font-weight: $date-picker-years-active-font-weight;
+        }
+
+        &:hover {
+            background: $date-picker-years-item-hover-background;
+        }
+    }
+}
+
+.v-picker--landscape {
+    .v-date-picker-years {
+        height: $date-picker-years-landscape-height;
+        padding: 0;
+    }
+}

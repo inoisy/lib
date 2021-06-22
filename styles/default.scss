@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#__nuxt,
+#__layout {
+    width: 100%;
+    height: 100%;
+}
+/* stylelint-disable declaration-no-important */
+html {
+    overflow-x: hidden;
+
+    &.overflow-y-hidden {
+        overflow-y: hidden !important;
+    }
+}
+
+.nuxt-progress {
+    background: linear-gradient(90deg, $vice 0%, $moxxy 57.99%, $redline 100%);
+}
+
+.icon-default {
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+
+    @include respond-to(sm) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.frame-icon {
+    width: 4rem;
+    height: 4rem;
+    fill: currentColor;
+
+    @include respond-to(md) {
+        width: 32px;
+        height: 32px;
+    }
+
+    &.is-medium {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    &.is-default {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    &.is-small {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &.is-xsmall {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+
+    &.is-xxsmall {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    &.is-large {
+        width: 16rem;
+        height: 16rem;
+
+        @include respond-to(md) {
+            width: 136px;
+            height: 136px;
+        }
+
+        @include respond-to(md) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.error--text {
+    @include text-color($redline);
+}
+
+.primary--text {
+    @include text-color($vice);
+}
+
+.primary {
+    @include background-color($vice);
+}
+
+.accent {
+    @include background-color($vice);
+}
+
+/* stylelint-disable declaration-no-important */
+
+.bg-positive {
+    background: $secondary-100 !important;
+    color: $secondary-500 !important;
+
+    svg {
+        color: $secondary-500 !important;
+    }
+}
+
+.bg-negative {
+    background: $primary-100 !important;
+    color: $redline !important;
+
+    svg {
+        color: $redline !important;
+    }
+}
+
+.bg-info {
+    border: 2px solid $milk;
+    background: $base-50 !important;
+    color: $base-400 !important;
+
+    svg {
+        color: $base-400 !important;
+    }
+}
+
+$colors: (
+    'redline': $redline,
+    'vice': $vice,
+    'moxxy': $moxxy,
+    'elysium': $elysium,
+    'kain': $kain,
+    'lightgray': $light-gray,
+    'blue': $blue,
+    'pink': $pink,
+    'violet': $violet,
+    'base-500': $base-500,
+    'base-100': $base-100,
+    'black': #000,
+    'white': #fff,
+    'transparent': transparent
+);
+
+@each $color_name, $color_value in $colors {
+    .#{$color_name} {
+        @include background-color($color_value);
+    }
+
+    .#{$color_name}--text {
+        @include text-color($color_value);
+    }
+}

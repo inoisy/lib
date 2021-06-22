@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VListGroup.js should render component and match snapshot 1`] = `
+<div class="v-list-group">
+  <div tabindex="0"
+       aria-expanded="false"
+       role="button"
+       class="v-list-group__header v-list-item v-list-item--link theme--light"
+  >
+    <div class="v-list-item__icon v-list-group__header__append-icon">
+      <span aria-hidden="true"
+            class="v-icon notranslate theme--light"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewbox="0 0 24 24"
+             role="img"
+             aria-hidden="true"
+             class="v-icon__svg"
+        >
+          <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z">
+          </path>
+        </svg>
+      </span>
+    </div>
+  </div>
+  <transition-stub name="expand-transition">
+  </transition-stub>
+</div>
+`;

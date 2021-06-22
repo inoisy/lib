@@ -1,0 +1,293 @@
+/* Text */
+.title {
+    font-size: 64px;
+    line-height: 1.12;
+    font-weight: 500;
+
+    @include respond-to(md) {
+        font-size: 56px;
+        line-height: 1.14;
+    }
+
+    @include respond-to(sm) {
+        font-size: 32px;
+        line-height: 1.24;
+    }
+}
+
+.h1 {
+    font-size: 56px;
+    line-height: 1.14;
+    font-weight: 500;
+    letter-spacing: -.1rem;
+
+    @include respond-to(md) {
+        font-size: 46px;
+        line-height: 1.16;
+    }
+
+    @include respond-to(sm) {
+        font-size: 28px;
+        line-height: 1.28;
+    }
+}
+
+.h2 {
+    font-size: 48px;
+    line-height: 1.16;
+    font-weight: 500;
+
+    @include respond-to(md) {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    @include respond-to(sm) {
+        font-size: 24px;
+        line-height: 1.32;
+    }
+}
+
+.h3 {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: -.1rem;
+
+    @include respond-to(md) {
+        font-size: 32px;
+        line-height: 1.24;
+    }
+
+    @include respond-to(sm) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.h4 {
+    font-size: 32px;
+    line-height: 1.24;
+    font-weight: 500;
+    letter-spacing: -.1rem;
+
+    @include respond-to(md) {
+        font-size: 28px;
+        line-height: 1.28;
+    }
+
+    @include respond-to(sm) {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+.h5 {
+    font-size: 24px;
+    line-height: 1.32;
+    font-weight: 500;
+
+    @include respond-to(sm) {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+
+.subtitle1 {
+    font-size: 24px;
+    line-height: 1.32;
+    font-weight: 500;
+
+    @include respond-to(sm) {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+}
+
+.subtitle2 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 500;
+
+    @include respond-to(sm) {
+        font-size: 16px;
+        line-height: 1.52;
+    }
+}
+
+.subtitle3 {
+    font-size: 18px;
+    line-height: 1.36;
+    font-weight: 500;
+
+    @include respond-to(sm) {
+        font-size: 16px;
+        line-height: 1.52;
+    }
+}
+
+.p1 {
+    font-size: 18px;
+    line-height: 1.56;
+
+    @include respond-to(sm) {
+        font-size: 16px;
+        line-height: 1.52;
+    }
+}
+
+.p2 {
+    font-size: 16px;
+    line-height: 1.52;
+}
+
+.p3 {
+    font-size: 14px;
+    line-height: 1.46;
+}
+
+.p4 {
+    font-size: 12px;
+    line-height: 1.32;
+}
+
+.button1 {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.button2 {
+    font-size: 14px;
+    line-height: 1.16;
+    font-weight: 500;
+
+    @include respond-to(lg) {
+        font-size: 12px;
+    }
+    // @include fix-responsive-clamp(font-size,12px, 1.4rem, 14px);
+    // @supports ( font-size: clamp(12px, 1.4rem, 14px)) {
+    //     font-size: clamp(12px, 1.4rem, 14px);
+    // }
+}
+
+.button3 {
+    font-size: 14px;
+    line-height: 1.04;
+    font-weight: 500;
+}
+
+.caption {
+    font-size: 12px;
+    line-height: 1.32;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 10px;
+    line-height: 1.46;
+    font-weight: 500;
+}
+
+.label {
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.46;
+    letter-spacing: .1em;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.52;
+
+    // @include fix-responsive-min(font-size,16px,1.6rem);
+    // @supports ( font-size: min(1.6rem, 16px)) {
+    //     font-size: min(1.6rem, 16px);
+    // }
+}
+
+.rub {
+    font-weight: normal;
+}
+
+.strike {
+    position: relative;
+    text-decoration: none;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 1px;
+        background-color: currentColor;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}
+
+/* Colors */
+.c-milk {
+    color: $milk;
+}
+
+.c-milk-opacity {
+    color: rgba($milk, .24);
+}
+
+.c-base {
+    color: $base-500;
+}
+
+.c-base-200 {
+    color: $base-200;
+}
+
+.c-base-300 {
+    color: $base-300;
+}
+
+.c-base-400 {
+    color: $base-400;
+}
+
+.c-vice {
+    color: $vice;
+}
+
+.c-moxxy {
+    color: $moxxy;
+}
+
+.c-redline {
+    color: $redline;
+}
+
+.c-kain {
+    color: $kain;
+}
+
+.c-elysium {
+    color: $elysium;
+}
+
+/* Weight */
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-normal {
+    font-weight: normal;
+}

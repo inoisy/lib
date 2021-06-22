@@ -1,0 +1,48 @@
+@mixin generate-responsibility($property, $value) {
+    @if type-of($value) == 'map' {
+        $default-property: map-get($value, 'value');
+        $breakpoins: map-get($value, 'breakpoins');
+        $has-breakpoins-key: (type-of($breakpoins) == map);
+
+        #{$property}: $default-property;
+        @if ($has-breakpoins-key) {
+            @each $key, $val in $breakpoins {
+                @include respond-to(#{$key}) {
+                    #{$property}: $val;
+                }
+            }
+        }
+    }
+    @else {
+        #{$property}: $value;
+    }
+}
+
+/* stylelint-disable no-duplicate-selectors */
+@mixin prepend-append-margin-top($margin-top) {
+    .v-input__prepend-outer,
+    .v-input__prepend-inner,
+    .v-input__append-inner,
+    .v-input__append-outer {
+        margin-top: $margin-top;
+    }
+}
+
+@mixin outer-margin-top($margin-top) {
+    .v-input__prepend-outer,
+    .v-input__append-outer {
+        // margin-top: $margin-top;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@mixin label-position($top, $translateY, $scale: .75) {
+    .v-label {
+        top: $top;
+
+        &--active {
+            transform: translateY($translateY) scale($scale);
+        }
+    }
+}

@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VRadioGroup.js should match dense snapshot 1`] = `
+<div class="v-input v-input--dense theme--light v-input--selection-controls v-input--radio-group v-input--radio-group--column">
+  <div class="v-input__control">
+    <div class="v-input__slot"
+         style="height: auto;"
+    >
+      <div role="radiogroup"
+           aria-labelledby="input-5"
+           class="v-input--radio-group__input"
+      >
+        <div class="v-radio theme--light">
+          <div class="v-input--selection-controls__input">
+            <span aria-hidden="true"
+                  class="v-icon notranslate v-icon--dense theme--light"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   viewbox="0 0 24 24"
+                   role="img"
+                   aria-hidden="true"
+                   class="v-icon__svg"
+              >
+                <path d="M12,20C7.58,20 4,16.42 4,12C4,7.58 7.58,4 12,4C16.42,4 20,7.58 20,12C20,16.42 16.42,20 12,20M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2Z">
+                </path>
+              </svg>
+            </span>
+            <input aria-checked="false"
+                   id="input-6"
+                   role="radio"
+                   type="radio"
+                   name="radio-5"
+                   value
+            >
+            <div class="v-input--selection-controls__ripple">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VRadioGroup.js should match snapshot 1`] = `
+<div class="v-input theme--light v-input--selection-controls v-input--radio-group v-input--radio-group--column">
+  <div class="v-input__control">
+    <div class="v-input__slot"
+         style="height: auto;"
+    >
+      <div role="radiogroup"
+           aria-labelledby="input-1"
+           class="v-input--radio-group__input"
+      >
+      </div>
+    </div>
+    <div class="v-messages theme--light">
+      <transition-group-stub tag="div"
+                             name="message-transition"
+                             class="v-messages__wrapper"
+      >
+      </transition-group-stub>
+    </div>
+  </div>
+</div>
+`;

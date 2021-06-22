@@ -1,0 +1,45 @@
+@import './_variables.scss';
+
+@include theme(v-divider) using ($material) {
+    border-color: map-get($material, 'dividers');
+}
+
+.v-divider {
+    display: block;
+    flex: 1 1 0;
+    max-width: 100%;
+    height: 0;
+    max-height: 0;
+    border: solid;
+    border-width: thin 0 0 0;
+    transition: inherit;
+
+    &--inset:not(.v-divider--vertical) {
+        max-width: calc(100% - #{$divider-inset-margin});
+        // +ltr()
+        margin-left: $divider-inset-margin;
+
+        // +rtl()
+        //   margin-right: $divider-inset-margin
+    }
+
+    &--vertical {
+        display: inline-flex;
+        align-self: stretch;
+        width: 0;
+        max-width: 0;
+        height: inherit;
+        min-height: 100%;
+        max-height: 100%;
+        margin: 0 -1px; // Prevent wrapping in flex layouts
+        border: solid;
+        border-width: 0 thin 0 0;
+        vertical-align: text-bottom;
+
+        &.v-divider--inset {
+            min-height: 0;
+            max-height: $divider-inset-max-height;
+            margin-top: $divider-inset-margin-top;
+        }
+    }
+}

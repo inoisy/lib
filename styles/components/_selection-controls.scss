@@ -1,0 +1,142 @@
+// @import '../styles.sass'
+// @import '../common/_colors';
+// Theme
+@include theme(v-input--selection-controls) using ($material) {
+    &.v-input--is-disabled:not(.v-input--indeterminate) {
+        .v-icon {
+            // needed for helper override
+            color: map-deep-get($material, 'selection-controls', 'disabled') !important;
+        }
+    }
+}
+
+.v-input--selection-controls {
+    // margin-top: $input-top-spacing;
+    // padding-top: 4px;
+
+    > .v-input__append-outer,
+    > .v-input__prepend-outer {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &:not(.v-input--hide-details) {
+        > .v-input__slot {
+            margin-bottom: 12px;
+        }
+    }
+
+    .v-input__slot,
+    .v-radio {
+        cursor: pointer;
+
+        > .v-label {
+            display: inline-flex;
+            align-items: center;
+            flex: 1 1 auto;
+            // TODO: all selection controls need separate sass files
+            height: auto;
+        }
+    }
+
+    &__input {
+        position: relative;
+        display: inline-flex;
+        flex: 0 0 auto;
+        width: 24px;
+        height: 24px;
+        // +ltr()
+        margin-right: 8px;
+        color: inherit;
+        transition: $primary-transition;
+        transition-property: transform;
+        user-select: none;
+
+        .v-icon {
+            width: 100%;
+        }
+
+        // +rtl()
+        //   margin-left: 8px
+
+        input[role="checkbox"],
+        input[role="radio"],
+        input[role="switch"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+            user-select: none;
+        }
+        // Sibling selector to avoid targeting v-radio-group's label
+        & + .v-label {
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    &__ripple {
+        position: absolute;
+        top: calc(50% - 24px);
+        left: -12px;
+        width: 34px;
+        height: 34px;
+        margin: 7px;
+        border-radius: 50%;
+        transition: inherit;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: inherit;
+            opacity: .2;
+            transform: scale(.2);
+            transform-origin: center center;
+            transition: inherit;
+        }
+
+        > .v-ripple__container {
+            transform: scale(1.2);
+        }
+    }
+
+    &.v-input--dense {
+        .v-input--selection-controls__ripple {
+            left: -9px;
+            width: 28px;
+            height: 28px;
+        }
+
+        &:not(.v-input--switch) {
+            .v-input--selection-controls__ripple {
+                top: calc(50% - 21px);
+            }
+        }
+    }
+
+    &.v-input {
+        flex: 0 1 auto;
+    }
+
+    &.v-input--is-focused,
+    .v-radio--is-focused {
+        .v-input--selection-controls__ripple:before {
+            background: currentColor;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.v-input--selection-controls__input:hover {
+    .v-input--selection-controls__ripple:before {
+        background: currentColor;
+        transform: scale(1.2);
+        transition: none;
+    }
+}
