@@ -2,49 +2,14 @@ export function lockBody() {
     document.documentElement.style.height = '100%';
     document.body.style.height = '100%';
     document.body.style.overflow = 'hidden';
-    // document.body.style.paddingRight = '15px';
-    // document.body.style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
-    // document.body.style.height = '100%';
-    // document.body.style.overflow = 'hidden';
-    // const header = document.getElementById('scroll-header');
-    // if (!header) {
-    //     return;
-    // }
-
-    // header.style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
 }
 
 export function unlockBody() {
     document.documentElement.style.height = null;
     document.body.style.height = null;
     document.body.style.overflow = null;
-    // document.body.style.paddingRight = null;
-    // document.body.style.height = '';
-    // document.body.style.overflow = '';
-    // document.body.style.paddingRight = '';
-
-    // const header = document.getElementById('scroll-header');
-    // if (!header) {
-    //     return;
-    // }
-
-    // header.style.paddingRight = '';
 }
-/* Has filter */
-// export function splitThousands(num, separator = ' ') {
-//     if (num === undefined || num === null) {
-//         console.warn('[splitThousands] Wrong Number ', num);
-//         return '';
-//     }
-//     const tmp = num.toString().split('.');
-//     let value = tmp[0].replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, separator);
-//     if (Number(tmp[1])) {
-//         value += `.${tmp[1]}`;
-//     }
-//     return value;
-// }
 
-/* Has filter */
 export function roundToMillions(num, accuracy = 1) {
     if (num === undefined || num === null) {
         console.warn('[roundToMillions] Wrong Number ', num);
@@ -308,30 +273,6 @@ export function isIe() {
     return msie > 0;
 }
 
-// export function lockBody() {
-//     document.body.style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
-//     document.body.style.height = '100%';
-//     document.body.style.overflow = 'hidden';
-//     const header = document.getElementById('scroll-header');
-//     if (!header) {
-//         return;
-//     }
-
-//     header.style.paddingRight = `${window.innerWidth - document.documentElement.clientWidth}px`;
-// }
-
-// export function unlockBody() {
-//     document.body.style.height = '';
-//     document.body.style.overflow = '';
-//     document.body.style.paddingRight = '';
-
-//     const header = document.getElementById('scroll-header');
-//     if (!header) {
-//         return;
-//     }
-
-//     header.style.paddingRight = '';
-// }
 
 export function scrollTo(id = false, force = false) {
     if (!id) {

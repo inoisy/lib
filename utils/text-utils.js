@@ -26,7 +26,6 @@ export function replaceVariablesInTemplate(str, params) {
 }
 
 export function userNameWithInitialsFormatted(surname, name, patronymic) {
-    // const { surname, name, patronymic } = this.$store.state.auth.user;
     const surnameCapitalized =capitalizeFirstLetter(surname);
     const nameInitial = initial(name);
     const patronymicInitial = initial(patronymic);

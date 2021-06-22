@@ -99,38 +99,11 @@ export default function getDeviceFromRequest(req, options) {
         isTablet: !mobile && mobileOrTablet,
         isDesktop: !mobileOrTablet,
         isDesktopOrTablet: !mobile,
-        //   isIos: ios,
-        //   isAndroid: android,
-        //   isWindows: windows,
-        //   isMacOS: macOS,
         isSafari,
         isFirefox,
         isEdge,
         isChrome,
         isSamsung,
-        //   isCrawler
         hasTouch,
     };
 }
-// export default class Device {
-//     constructor(ctx) {
-//         let userAgent = '';
-//         if (typeof req !== 'undefined') {
-//             userAgent = req.headers['user-agent'];
-//         } else if (typeof navigator !== 'undefined') {
-//             userAgent = navigator.userAgent;
-//         }
-//         const { mobile, mobileOrTablet, isSafari, isFirefox, isEdge, isChrome, isSamsung } = extractDevices(ctx, userAgent);
-
-//         this.isMobile = mobile;
-//         this.isMobileOrTablet = mobileOrTablet;
-//         this.isTablet =!mobile && mobileOrTablet;
-//         this.isDesktop = !mobileOrTablet;
-//         this.isDesktopOrTablet = !mobile;
-//         this.isSafari = isSafari;
-//         this.isFirefox = isFirefox;
-//         this.isEdge = isEdge;
-//         this.isChrome = isChrome;
-//         this.isSamsung = isSamsung;
-//     }
-// }

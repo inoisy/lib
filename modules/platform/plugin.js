@@ -21,5 +21,3 @@ export default ({req,app}, inject) => {
     app.$application = application;
     inject('application', application);
 };
-// ctx.$device = device;
-// ctx.$breakpoint = breakpoint;

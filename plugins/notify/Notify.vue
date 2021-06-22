@@ -1,23 +1,12 @@
 <script>
-// Extensions
-// import VSheet from '~/components/ui/VSheet';
-
 // Components
 import VIcon from '../../components/ui/VIcon';
 import VBtn from '../../components/ui/VBtn';
 import VProgressCircular from '../../components/ui/VProgressCircular';
 import VAvatar from '../../components/ui/VAvatar';
 
-// Mixins
-// import Positionable from '~/mixins/positionable';
-// import Sizeable from '~/mixins/sizeable';
-
-// Utilities
-// import mixins from '~/utils/mixins';
-
 let uid = 0;
 const defaults = {};
-// const baseMixins = mixins(VSheet, Positionable, Sizeable);
 
 /* eslint-disable no-unused-expressions,no-use-before-define,brace-style */
 const positionList = [
@@ -119,10 +108,6 @@ const positionClass = {};
 
 import { consoleError } from '../../utils/console';
 
-// function logError(error, config) {
-//     console.error(`Notify: ${error}`, config);
-//     return false;
-// }baseMixins.extend()
 
 export default {
     name: 'VNotifications',

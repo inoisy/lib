@@ -1,4 +1,3 @@
-// import Platform from '../plugins/Platform.js';
 /* eslint-disable no-unused-expressions,no-void */
 
 export function clearSelection() {

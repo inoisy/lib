@@ -1,22 +1,13 @@
 /* eslint-disable no-eq-null*/
 export default class Application {
     constructor() {
-        // static property: 'application' = 'application'
-
         this.bar = 0;
-
         this.top = 0;
-
         this.left = 0;
-
         this.insetFooter = 0;
-
         this.right = 0;
-
         this.bottom = 0;
-
         this.footer = 0;
-
         this.application = {
             bar: {},
             top: {},
