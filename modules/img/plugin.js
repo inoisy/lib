@@ -1,7 +1,6 @@
-// import { getFileExtension } from '~/assets/js/file-utils';
 import { createHmac } from 'crypto';
 import { memoize } from 'decko';
-// bind, debounce
+
 function getFileExtension(file) {
     return file.split('.').pop();
 }
@@ -20,8 +19,6 @@ const sign = (salt, target, secret) => {
     return urlSafeBase64(hmac.digest());
 };
 
-
-// const s3Url = url => `s3://${process.env.S3_BUCKET_NAME}/${url}`;
 export class ImgProxy {
     constructor({ IMGPROXY_KEY, IMGPROXY_SALT,IMGPROXY_SITE_HOST,IMGPROXY_S3_ENDPOINT }) {
         if (!IMGPROXY_KEY) {
@@ -79,8 +76,6 @@ export class ImgProxy {
         return `${process.env.IMGPROXY_S3_ENDPOINT}/${process.env.S3_BUCKET_NAME}/${path}`;
     }
 }
-// import defu from 'defu';
-
 export default ({ app }, inject) => {
     const  options = <%= serialize(options) %>;
     const imageProxy = new ImgProxy(options);
